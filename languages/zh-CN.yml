@@ -1,0 +1,45 @@
+common:
+    archive:
+        one: '归档'
+        other: '归档'
+    category:
+        one: '分类'
+        other: '分类'
+    tag:
+        one: '标签'
+        other: '标签'
+    post:
+        one: '文章'
+        other: '文章'
+    prev: '上一页'
+    next: '下一页'
+widget:
+    follow: '关注我'
+    recents: '最新文章'
+    links: '抓到我'
+    tag_cloud: '标签云'
+    catalogue: '目录'
+article:
+    more: '阅读更多'
+    comments: '评论'
+    read: '读完'
+    about: '大约'
+    words: '个字'
+donate:
+    title: '本博客由萌萌哒的littleGreedy用 💗 制作'
+    alipay: '支付宝'
+    wechat: '微信'
+plugin:
+    backtotop: '回到顶端'
+    visit: '%s次访问'
+    visitor: '共%s个访客'
+search:
+    search: '搜索'
+    hint: '想要查找什么...'
+insight:
+    hint: '想要查找什么...'
+    posts: '文章'
+    pages: '页面'
+    categories: '分类'
+    tags: '标签'
+    untitled: '(无标题)'

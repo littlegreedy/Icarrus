@@ -1,0 +1,83 @@
+<footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="<%- url_for('/') %>">
+                <% if (has_config('logo.text') && get_config('logo.text')) { %>
+                    <%= get_config('logo.text') %>
+                <% } else { %>
+                    <img src="<%- url_for(get_config('logo')) %>" alt="<%= get_config('title') %>" height="28">
+                <% } %>
+                </a>
+                <p class="is-size-7">
+				由<a href="https://hexo.io/" target="_blank">Hexo</a> 强力驱动.Themes by <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a> V2.3.0.
+                <br />&copy; <%= date(new Date(), 'YYYY') %> <%= get_config('author') || get_config('title') %>&nbsp;. Made with 💗 by littleGreedy.
+                
+                </p>
+            </div>
+			
+			
+			
+			
+            <div class="level-end">
+            <% if (has_config('footer.links')) { %>
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                <% let links = get_config('footer.links'); %>
+                <% for (let name in links) {
+                        let link = links[name]; %>
+                <p class="control">
+                    <a class="button is-white <%= typeof(link) !== 'string' ? 'is-large' : '' %>" target="_blank" title="<%= name %>" href="<%= url_for(typeof(link) === 'string' ? link : link.url) %>">
+                        <% if (typeof(link) === 'string') { %>
+                        <%= name %>
+                        <% } else { %>
+                        <i class="<%= link.icon %>"></i>
+                        <% } %>
+                    </a>
+                </p>
+                <% } %>
+                </div>
+            <% } %>
+            </div>
+        <div align="center">
+            <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+            <script>
+                var now = new Date(); 
+                function createtime() { 
+                    var grt= new Date("7/23/2019 20:00:00");//此处修改你的建站时间或者网站上线时间 
+                    now.setTime(now.getTime()+250); 
+                    days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+                    hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+                    if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+                    mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+                    seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+                    snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+                    document.getElementById("timeDate").innerHTML = "博客已悄悄运行 "+dnum+" 天 "; 
+                    document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+                } 
+            setInterval("createtime()",250);
+            </script>
+            <div align="center">
+            <span id="busuanzi_container_site_pv" class="theme-info">本站总访问量-<span id="busuanzi_value_site_pv"></span>-次|
+              </span>
+              <span id="busuanzi_container_site_uv" class="theme-info">您是第-<span id="busuanzi_value_site_uv"></span>-位小伙伴</span>
+
+            <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            </div>
+        </div>
+		
+        <span>
+		<script type="  text/javascript" src="//rf.revolvermaps.com/0/0/0.js?i=5mlnw8us70q&amp;d=2&amp;p=3&amp;b=4&amp;w=218&amp;g=3&amp;f=comic_sans_ms&amp;fs=12&amp;r=0&amp;c0=000000&amp;c1=2476b5&amp;c2=000000&amp;ic0=0&amp;ic1=0" async="async"></script>
+		</span>
+        </div>
+		
+		
+		
+
+</div>
+
+
+
+</footer>
+
+
+
