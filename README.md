@@ -15,7 +15,7 @@ Save and share some contents of config which are supported by every strain of  u
 
 -----------
 
-**[Open source license](https://github.com/littlegreedy/IcarusSample/blob/master/LICENSE.md)**
+**[Open source license](https://github.com/littlegreedy/IcarusSample/blob/master/LICENSE)**
 
 **Author** : [littleGreedy](https://github.com/littlegreedy)
 
